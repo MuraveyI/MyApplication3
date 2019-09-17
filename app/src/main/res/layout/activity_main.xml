@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Menu"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Latte            1,5$"
+            android:textColor="#0a0a0a"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/lattebtn"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="addList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Cappucino    1$"
+            android:textColor="#0a0a0a"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/cappucinobtn"
+            android:layout_weight="1"
+            android:text="Add"
+            android:onClick="addList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Americano    2$"
+            android:textColor="#0a0a0a"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/americanobtn"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:onClick="addList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:onClick="order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
